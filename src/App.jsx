@@ -1,0 +1,48 @@
+// import React, { useState } from 'react'
+// import Search  from './components/search'
+
+// const App = () => {
+//     const [searchTerm,setSearchTerm] = useState('')
+//   return (
+//     <main>
+//           <div className="pattern"/>
+//           <img src="./BG.png" alt="Background" />
+//     <div className = "wrapper">
+//         <header>
+//             <img src="./hero-img.png" alt="hero-image" />
+//                   <h1>Find <span className="text-gradient">Movies </span>You'll enjoy without the hassle</h1>
+//                   <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}></Search>
+//                   <h1>setSearchTerm</h1>
+//         </header>
+//     </div>
+    
+//     </main >
+//   )
+// }
+
+// export default App
+
+
+import React, { useState } from 'react'
+import Search from './components/search'
+
+const App = () => {
+    const [searchTerm, setSearchTerm] = useState('')
+
+    return (
+        <main >
+            <div className="pattern"></div>
+            <div className="wrapper">
+                <header >
+                    <img src="./hero-img.png" alt="Hero" className="mx-auto" />
+                    <h1>
+                        Find <span className="text-gradient">Movies</span> You'll enjoy without the hassle
+                    </h1>
+                    <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+                </header>
+            </div>
+        </main>
+    )
+}
+
+export default App
