@@ -8,7 +8,7 @@ const Search = ({searchTerm,setSearchTerm}) => {
         <input type="text"
           placeholder='Type to search for the movies'
           value={searchTerm}
-          onClick={(e) => setSearchTerm(e.target.value)}
+          onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
     </div>

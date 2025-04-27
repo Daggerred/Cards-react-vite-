@@ -27,14 +27,14 @@ import React, { useState } from 'react'
 import Search from './components/search'
 
 const App = () => {
-    const [searchTerm, setSearchTerm] = useState('')
+    const [searchTerm, setSearchTerm] = useState('');
 
     return (
         <main >
-            <div className="pattern"></div>
+            <div className="pattern"/>
             <div className="wrapper">
                 <header >
-                    <img src="./hero-img.png" alt="Hero" className="mx-auto" />
+                    <img src="./hero-img.png" alt="Hero Banner" />
                     <h1>
                         Find <span className="text-gradient">Movies</span> You'll enjoy without the hassle
                     </h1>
