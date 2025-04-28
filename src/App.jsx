@@ -23,11 +23,15 @@
 // export default App
 
 
-import React, { useState } from 'react'
+import React, { useState , useEffect} from 'react'
 import Search from './components/search'
+import NewsFeed from './components/newsfeed';
 
 const App = () => {
     const [searchTerm, setSearchTerm] = useState('');
+    useEffect(()=>{
+        
+    },[])
 
     return (
         <main >
@@ -39,6 +43,7 @@ const App = () => {
                         Find <span className="text-gradient">Movies</span> You'll enjoy without the hassle
                     </h1>
                     <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+                    <NewsFeed></NewsFeed>
                 </header>
             </div>
         </main>
